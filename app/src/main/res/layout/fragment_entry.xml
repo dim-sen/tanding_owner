@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.EntryFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_entry"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/txt_input_nama_gor_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_entry">
+
+        <EditText
+            android:id="@+id/txt_input_nama_gor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_border"
+            android:hint="Nama Gor"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:inputType="text"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/txt_input_alamat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_input_nama_gor_layout">
+
+        <EditText
+            android:id="@+id/txt_input_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_border"
+            android:hint="Alamat"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:inputType="text"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/time_picker_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_input_alamat_layout">
+
+        <EditText
+            android:id="@+id/input_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_border"
+            android:hint="Jam Buka"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:inputType="time"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/time_picker_layout_closed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_picker_layout">
+
+        <EditText
+            android:id="@+id/input_time_closed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_border"
+            android:hint="Jam Tutup"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:inputType="time"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/date_picker_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_picker_layout_closed">
+
+        <EditText
+            android:id="@+id/input_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_border"
+            android:hint="Tanggal"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:inputType="date"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/img_picker_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_picker_layout">
+
+        <EditText
+            android:id="@+id/input_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_border"
+            android:hint="Gambar"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:inputType="text"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/txt_input_kontak_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_picker_layout">
+
+        <EditText
+            android:id="@+id/txt_input_kontak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_border"
+            android:hint="Nomor Telepon"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:inputType="time"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/txt_input_harga_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_input_kontak_layout">
+
+        <EditText
+            android:id="@+id/txt_input_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_border"
+            android:hint="Harga"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:inputType="time"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:text="Submit"
+        app:layout_constraintTop_toBottomOf="@+id/txt_input_harga_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

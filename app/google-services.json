@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "687780470650",
+    "firebase_url": "https://tandingapps-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "tandingapps",
     "storage_bucket": "tandingapps.appspot.com"
   },
@@ -10,6 +11,35 @@
         "mobilesdk_app_id": "1:687780470650:android:de7565f380b06e601a40c3",
         "android_client_info": {
           "package_name": "com.dimsen.tandingowner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687780470650-87juhr952777s89uffe80rdrimkves22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8cTe2maXZxQG8mw3vDSSl2rrilup_Tnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687780470650-87juhr952777s89uffe80rdrimkves22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687780470650:android:e10fddddb7498c6d1a40c3",
+        "android_client_info": {
+          "package_name": "com.example.tandingx"
         }
       },
       "oauth_client": [
